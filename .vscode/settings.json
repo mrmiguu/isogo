@@ -4,11 +4,7 @@
       {
         "cmd": "tinygo build -o main.wasm -target wasm ./main.go",
         "match": ".go"
-      },
-      // {
-      //   "cmd": "go build -o main.wasm",
-      //   "match": ".go"
-      // }
+      }
     ]
   },
   "liveServer.settings.wait": 0
