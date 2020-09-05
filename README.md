@@ -42,3 +42,17 @@ The tinygo packages on AUR were not working for me, so I build it from source.
 
 ## Intellij with go plugin (should be the same for go-land)
 ![Intellij](./docs/intellij1.png)
+
+## Optimize WASM (Arch Linux)
+- [ ] Install WASM tools
+      ```
+      sudo pacman -S wabt
+      wasm2wat main.wasm -o wasm.wat
+      wat2wasm wasm.wat -o main.wasm
+      ```
+      ```
+      Before
+      -rwxr-xr-x   1 wolfie wolfie  79K Sep  5 14:45 main.wasm
+      After
+      -rwxr-xr-x   1 wolfie wolfie  69K Sep  5 14:56 main.wasm
+      ```
