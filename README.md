@@ -16,9 +16,10 @@ the idea of moving forward from there scares you because you're not sure when co
 The tinygo packages on AUR were not working for me, so I build it from source.
 
 - [ ] plug in all the case fans on your PC.  This is a heavy lift.
-- [ ] git https://github.com/tinygo-org/tinygo.git
+- [ ] Build Steps
 
       ```
+      git https://github.com/tinygo-org/tinygo.git
       cd tinygo
       git submodule update --init
       make llvm-source
@@ -45,6 +46,7 @@ The tinygo packages on AUR were not working for me, so I build it from source.
 
 ## Optimize WASM (Arch Linux)
 - [ ] Install WASM tools
+
       ```
       sudo pacman -S wabt
       wasm2wat main.wasm -o wasm.wat
