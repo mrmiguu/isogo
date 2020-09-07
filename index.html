@@ -4,6 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico" />
   <script crossorigin src="https://unpkg.com/react@latest/umd/react.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@latest/umd/react-dom.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/@material-ui/core@latest/umd/material-ui.production.min.js"></script>
@@ -14,7 +15,7 @@
       const main_wasm = await fetch('main.wasm')
       const buf = await main_wasm.arrayBuffer()
       const res = await WebAssembly.instantiate(buf, go.importObject)
-      go.run(res.instance)
+      await go.run(res.instance)
     }()
   </script>
 </head>

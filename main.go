@@ -1,3 +1,5 @@
+// +build !tinygo
+
 package main
 
 import (
@@ -39,7 +41,7 @@ func app() js.Value {
 		muiButton,
 		map[string]interface{}{
 			"onClick": js.FuncOf(func(this js.Value, args []js.Value) interface{} {
-				fmt.Println("asdf")
+				fmt.Println("beware wolves!")
 				return nil
 			}),
 		},
